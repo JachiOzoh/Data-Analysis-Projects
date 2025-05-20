@@ -31,12 +31,6 @@ FROM fact_spends
 GROUP BY payment_type
 ORDER BY spend DESC;
 
-SELECT *
-FROM fact_spends
-
-SELECT *
-FROM dim_customers
-
 -- Answer: CREDIT CARD
 --The most likey cause of this is ease of payment.
 

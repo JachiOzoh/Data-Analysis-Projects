@@ -1,3 +1,6 @@
+SELECT @@VERSION AS 'SQL Server Version Details'
+/*Microsoft SQL Server 2022 (RTM-GDR) (KB5040936) - 16.0.1121.4 (X64)
+*/
 --NO DUPLICATES FOUND
 --NO NULLS FOUND
 

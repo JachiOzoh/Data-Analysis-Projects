@@ -63,10 +63,10 @@ ORDER BY spend DESC;
 
 --What gender has the highest spend?
 SELECT SUM(spend) AS spend,c.gender
-from fact_spends s
-inner join dim_customers c ON s.customer_id=c.customer_id
-group by c.gender
-order by spend DESC;
+FROM fact_spends s
+INNER JOIN dim_customers c ON s.customer_id=c.customer_id
+GROUP BY c.gender
+ORDER BY spend DESC;
 -- Answer: MALE
 
 --What marital status has the highest spend?
@@ -95,3 +95,4 @@ INNER JOIN dim_customers c ON s.customer_id=c.customer_id
 GROUP BY avg_income,
 gender
 ORDER BY avg_utilization DESC;
+
